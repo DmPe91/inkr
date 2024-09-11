@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+        <script src="js/modal_bootstrap.js"></script>
+        <script src="js/modal_menu.js"></script>
+        <script src="js/pagination_tarif.js"></script>
+        <script src="js/mobille_menu.js"></script>
+        <script src="js/mobile.js"></script>
+        <script src="js/filter_tarif.js"></script>
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <header>
+                <div class="header container col-xl-12">
+                    <div class="logo">
+                        <img src="img/header/logo-desktop-header.png" alt="logo">
+                    </div>
+                    <div class="menu-blocks">
+                        <div class="menu-block">
+                        <div class="contacts">
+                            <div class="phone">
+                                <div class="phone-text">Техническая поддержка:</div>
+                                <div class="phone-number"><a href="">8(861) 211-3000</a></div>
+                            </div>
+                            <div class="mail">
+                                <div class="mail-text">Почта:</div>
+                                <div class="mail-adress"> <a href="">Intex@mail.ru</a></div>
+                            </div>
+                            <div class="soical-media">
+                                <a href=""><img src="img/header/tg-icon.svg" alt="telegramm"></a>
+                            </div>
+                        </div>
+                            <a href="">
+                                <button class="button-grey">
+                                    <img src="img/header/button-icon (5).svg" alt="personal-icon">
+                                    <span>Личный кабинет</span>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="menu-block">
+                            <nav>
+                                <div class="menu">
+                                    <ul>
+                                        <li class="js-trigger_menu-modal">
+                                            
+                                            <span>Интернет</span>
+                                            <img src="img/header/menu-element-icon.svg" alt="icon-menu">
+                                            
+                                        </li>
+                                        <li class="active__dropdown-desktop">
+                                            <a href="tv.html">
+                                                <span>Телевединие</span>
+                                                <img src="img/header/menu-element-icon.svg" alt="icon-menu">
+                                            </a>
+                                            <ul class="dropdown-desktop">
+                                                <li class="not-hover">Телефония</li>
+                                               <a href="tel-home.html"><li class="small-list-menu">Частным лицам</li></a>
+                                               <a href="tel-business.html"><li class="small-list-menu">Для бизнеса</li></a>
+                                           </ul>
+                                        </li>
+                                        <li><a href="company.html">О нас</a></li>
+                                        <li><a href="documents.html">Документы</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                        <li><a href="vacancies.html">Вакансии</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <button class="button-green js-btn-modal-application">Обратная связь</button>
+                        </div>   
+                    </div>
+                    <div class="mobile-menu-btn">
+                        <a href="#"><img src="img/header/fi_1077063.png" class="mobile-btn-icons"></a>
+                        <img src="img/Menu.svg" class="mobile-btn-icons js-mobile-menu__btn">
+                    </div>
+                    <div class="menu-popup js-menu-popup">
+                        <div class="menu-popup__block">
+                            <nav>
+                                <div>
+                                    <ul class="mobile-menu__list">
+                                        <li class="js-dropdown">
+                                            <span>Интернет</span>
+                                            <img src="img/arrow-down.svg" alt="icon-menu" class="js-dropdown__img">
+                                            <ul class="dropdown">
+                                                <a href="tel-home.html"><li>Домашний интернет</li></a>
+                                                <a href="tel-business.html"><li>Для бизнеса</li></a>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="tv.html">
+                                                <span>Телевединие</span>
+                                            </a>
+                                        </li>
+                                        <li class="js-dropdown">
+                                                <span>Телефония</span>
+                                                <img src="img/arrow-down.svg" alt="icon-menu" class="js-dropdown__img">
+                                            <ul class="dropdown">
+                                                <a href="tel-home.html"><li>Частным лицам</li></a>
+                                                <a href="tel-business.html"><li>Для бизнеса</li></a>
+                                            </ul>
+                                        </li>
+                                        <li><a href="company.html">О нас</a></li>
+                                        <li><a href="documents.html">Документы</a></li>
+                                        <li><a href="contacts.html">Контакты</a></li>
+                                        <li><a href="vacancies.html">Вакансии</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-popup__block">
+                            <div class="mobile-popup__contacts">
+                                <div class="phone">
+                                    <div class="phone-text">Техническая поддержка:</div>
+                                    <div class="phone-number"><a href="">8(861) 211-3000</a></div>
+                                </div>
+                                <div class="mail">
+                                    <div class="mail-text">Почта:</div>
+                                    <div class="mail-adress"> <a href="">Intex@mail.ru</a></div>
+                                    <div class="soical-media">
+                                        <a href=""><img src="img/header/tg-icon.svg" alt="telegramm"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-popup__btn">
+                                <a href="">
+                                    <button class="button-grey">
+                                        <img src="img/header/button-icon (5).svg" alt="personal-icon">
+                                        <span>Личный кабинет</span>
+                                    </button>
+                                </a>
+                                <button class="button-green js-btn-modal-application">Обратная связь</button>
+                            </div> 
+                        </div>
+                    </div>
+                    </div>
+                
+                <div class="modal-menu container col-xl-12 js-menu-modal">
+                    <div class="modal__content">
+                        <a href="#">
+                        <div class="modal__block">
+                            <div class="modal-block__title">Лучший тариф</div>
+                            <div class="modal-block__text">Лучшая скорость для работы и телевидения</div>
+                            <div class="modal-block__icons">
+                                <img src="img/main-page/main-page_modal.svg" alt="modal-icon">
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="modal__block">
+                            <div class="modal-block__title" style="padding-top: 20px; padding-bottom: 5px;">
+                                Рекомендованный тариф</div>
+                            <div class="modal-block__text" style="padding-top: 6px;">
+                                Лучшая скорость для работы и телевидения</div>
+                            <div class="modal-block__icons">
+                                <img src="img/main-page/main-page_modal-1.svg" alt="modal-icon">
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="modal__block modal-block__background--green">
+                            <div class="modal-block__title" style="color: white;">Оставить завку</div>
+                            <div class="modal-block__text">Поможем выбрать лучший тариф</div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="modal__block" style="width: 354px;">
+                            <div class="modal-block__text" style="font-size: 18px; font-weight:500;">
+                                <p>В поездках</p>
+                                <p>В поездках</p>
+                                <p>В поездках</p>
+                                <p>В поездках</p>
+                                <p>В поездках</p>
+                                <p>В поездках</p>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="modal-block__footer">
+                        <a href="#">
+                            <button class="button-grey">Личный кабинет</button>
+                        </a>
+                        <a>
+                            <button class="button-green">Акции</button>
+                        </a>
+                    </div>
+                   </div>
+                   <div id="js-modal_application" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-btn-close"><img src="img/Close.svg" alt="icon" class="js-btn-close-application"></div>
+                    <div class="modal-content">
+                    <div class="modal-application">
+                        <div class="modal-application__desription">
+                            <p>Ответим в ближайшее время</p>
+                            <h2>Заявка на подключение</h2>
+                        </div>
+                        <div class="modal-application__form">
+                            <form class="form-modal-app">
+                                <input name="city" type="text" placeholder="Город">
+                                <input name="street" type="text" placeholder="Улица">
+                                <input name="appartament" type="text" placeholder="Квартира">
+                                <input id="application_phone" name="phone" type="tel" maxlength="50"
+                                placeholder="+7 XXX XXX-XX-XX">
+                                <a href="">
+                                    <button class="main-page__button">
+                                        <span>Отправить</span>
+                                        <img src="img/main-page/main-page_icon.svg" alt="main-page_icon">
+                                    </button>
+                                </a>
+                                <div>
+                                    <input type="checkbox" id="presonal-concent" name="personal-consent" checked />
+                                    <label for="scales">Отправляя заявку, 
+                                        я соглашаюсь на обработку персональных данных</label>
+                                  </div>
+                            </form>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="modal-notification" class="modal fade">
+                        <div class="modal-dialog modal-dialog-centered md-notification">
+                        <div class="modal-btn-close md-notification__btn">
+                            <img src="img/Close.svg" alt="icon" class="js-btn-close-notification">
+                        </div>
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="modal-notification__text">
+                                    <h2>Спасибо за заявку!</h2>
+                                    <p>Наш специалист свяжется с вами в ближайшее время</p>
+                                </div>   
+                            </div>
+                        </div>    
+                        </div>
+                     </div>
+            </header>
+            <main  class="js-blur">
+                <section class="background-tv">
+                    <div class="home-tarif container col-xl-12">
+                        <div class="tarif-description">
+                            <p>Качественное телевидение, клоторое всегда рядом</p>
+                            <h1 style="color: #0C151C;">Телевидение</h1>
+                        </div>
+                        <div class="home-tarif__text">
+                            <span class="home-tarif__text--descripton">Все о телевидении</span>
+                            <h2 class="description-h2">Об услуге</h2>
+                            <h3 class="home-tarif__text--title">Поддерживаем устройства других провайдеров:</h3>
+                            <ul>
+                                <li>Смотрёшка Box - 4500 рублей</li>
+                            </ul>
+                            <p class="green-background" style="width: 582px;">Вы можете приобрести новую ТВ-приставку у нас по цене 4500 рублей.</p>
+                            <p>С 1 сентября 2018 года действует рассрочка. Стоимость – 300 рублей в месяц. Срок выплаты – 18 месяцев.
+                                Наличие Wi-Fi роутера обязательно.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="home-tarif__plans container col-xl-12">
+                    <div class="home-tarif__plans--description">
+                        <h2>Тариф</h2>
+                        <div class="tarif-buttons">
+                            
+                                <button class="tarif-btn active-slider-btn js-btn-slider" data-filter="js-apartments">
+                                <img src="img/main-tarif/skyscraper 1.svg" alt="icon">
+                                <span>Многоквартирные дома</span>
+                                </button>
+                            
+                            <button class="tarif-btn js-btn-slider" data-filter="js-house"><img src="img/main-tarif/house 1.svg" alt="icon"><span>Частный сектор</span></button>
+                        </div>
+                        <p>Основные пакеты</p>
+                    </div>
+                    <div class="home-tarif-blocks js-elem js-apartments" style="flex-wrap: wrap; row-gap: 20px;">
+                        <div class="tarif-block js-pagination" style="height: 442px;">
+                            <p class="tarif-block__name">Домашнее телевидение</p>
+                            <p class="tarif-block__description">Стандарт</p>
+                            <p>Домашнее телевидение</p>
+                            <p><span class="big-number" 
+                                style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                +200</span>ТВ каналов</p>
+                            <div class="bottom-block">
+                                <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                            <div class="tarif-block__btn">
+                            
+                                <button class="button-green js-btn-modal-application">
+                                <span>Подключить</span>
+                                <img src="img/main-page/main-page_icon.svg">
+                                </button>
+                            
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tarif-block js-pagination"  style="height: 442px;">
+                            <p class="tarif-block__name">Домашнее телевидение</p>
+                            <p class="tarif-block__description">Эксклюзив</p>
+                            <p>Домашнее телевидение</p>
+                            <p><span class="big-number" 
+                                style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                +275</span>ТВ каналов</p>
+                                <div class="bottom-block">
+                            <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                            <div class="tarif-block__btn">
+                            
+                                <button class="button-green js-btn-modal-application">
+                                <span>Подключить</span>
+                                <img src="img/main-page/main-page_icon.svg">
+                                </button>
+                            
+                            </div>
+                            </div>
+                        </div>    
+                        <div class="tarif-block js-pagination"  style="height: 442px;">
+                            <p class="tarif-block__name">Домашнее телевидение</p>
+                            <p class="tarif-block__description">Оптима</p>
+                            <p>Домашнее телевидение</p>
+                            <p><span class="big-number" 
+                                style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                +250</span>ТВ каналов</p>
+                             <div class="bottom-block">
+                                <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                            <div class="tarif-block__btn">
+                            
+                                <button class="button-green js-btn-modal-application">
+                                <span>Подключить</span>
+                                <img src="img/main-page/main-page_icon.svg">
+                                </button>
+                            
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tarif-block js-pagination" style="height: 442px;" >
+                            <p class="tarif-block__name">Домашнее телевидение</p>
+                            <p class="tarif-block__description">Стандарт</p>
+                            <p>Домашнее телевидение</p>
+                            <p><span class="big-number" 
+                                style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                +200</span>ТВ каналов</p>
+                            <div class="bottom-block">
+                                <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                            <div class="tarif-block__btn">
+                            
+                                <button class="button-green js-btn-modal-application">
+                                <span>Подключить</span>
+                                <img src="img/main-page/main-page_icon.svg">
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tarif-block js-pagination" style="height: 442px;">
+                            <p class="tarif-block__name">Домашнее телевидение</p>
+                            <p class="tarif-block__description">Стандарт</p>
+                            <p>Домашнее телевидение</p>
+                            <p><span class="big-number" 
+                                style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                +200</span>ТВ каналов</p>
+                            <div class="bottom-block">
+                            <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                            <div class="tarif-block__btn">
+                            
+                                <button class="button-green js-btn-modal-application">
+                                <span>Подключить</span>
+                                <img src="img/main-page/main-page_icon.svg">
+                                </button>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="tarif-block js-pagination" style="height: 442px;">
+                                <p class="tarif-block__name">Домашнее телевидение</p>
+                                <p class="tarif-block__description">Стандарт</p>
+                                <p>Домашнее телевидение</p>
+                                <p><span class="big-number" 
+                                    style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                    +200</span>ТВ каналов</p>
+                                <div class="bottom-block">
+                                    <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                <div class="tarif-block__btn">
+                                
+                                    <button class="button-green js-btn-modal-application">
+                                    <span>Подключить</span>
+                                    <img src="img/main-page/main-page_icon.svg">
+                                    </button>
+                                
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-tarif-blocks js-elem js-house" style="flex-wrap: wrap; row-gap: 20px; display: none;">
+                            <div class="tarif-block js-pagination-tab" style="height: 442px;">
+                                <p class="tarif-block__name">Домашнее телевидение</p>
+                                <p class="tarif-block__description">Стандарт</p>
+                                <p>Домашнее телевидение</p>
+                                <p><span class="big-number" 
+                                    style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                    +200</span>ТВ каналов</p>
+                                <div class="bottom-block">
+                                    <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                <div class="tarif-block__btn">
+                                
+                                    <button class="button-green js-btn-modal-application">
+                                    <span>Подключить</span>
+                                    <img src="img/main-page/main-page_icon.svg">
+                                    </button>
+                                
+                                </div>
+                                </div>
+                            </div>
+                            <div class="tarif-block js-pagination-tab"  style="height: 442px;">
+                                <p class="tarif-block__name">Домашнее телевидение</p>
+                                <p class="tarif-block__description">Эксклюзив</p>
+                                <p>Домашнее телевидение</p>
+                                <p><span class="big-number" 
+                                    style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                    +275</span>ТВ каналов</p>
+                                    <div class="bottom-block">
+                                <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                <div class="tarif-block__btn">
+                                
+                                    <button class="button-green js-btn-modal-application">
+                                    <span>Подключить</span>
+                                    <img src="img/main-page/main-page_icon.svg">
+                                    </button>
+                                
+                                </div>
+                                </div>
+                            </div>    
+                            <div class="tarif-block js-pagination-tab"  style="height: 442px;">
+                                <p class="tarif-block__name">Домашнее телевидение</p>
+                                <p class="tarif-block__description">Оптима</p>
+                                <p>Домашнее телевидение</p>
+                                <p><span class="big-number" 
+                                    style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                    +250</span>ТВ каналов</p>
+                                 <div class="bottom-block">
+                                    <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                <div class="tarif-block__btn">
+                                
+                                    <button class="button-green js-btn-modal-application">
+                                    <span>Подключить</span>
+                                    <img src="img/main-page/main-page_icon.svg">
+                                    </button>
+                                
+                                </div>
+                                </div>
+                            </div>
+                            <div class="tarif-block js-pagination-tab" style="height: 442px;" >
+                                <p class="tarif-block__name">Домашнее телевидение</p>
+                                <p class="tarif-block__description">Стандарт</p>
+                                <p>Домашнее телевидение</p>
+                                <p><span class="big-number" 
+                                    style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                    +200</span>ТВ каналов</p>
+                                <div class="bottom-block">
+                                    <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                <div class="tarif-block__btn">
+                                
+                                    <button class="button-green js-btn-modal-application">
+                                    <span>Подключить</span>
+                                    <img src="img/main-page/main-page_icon.svg">
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="tarif-block js-pagination-tab" style="height: 442px;">
+                                <p class="tarif-block__name">Домашнее телевидение</p>
+                                <p class="tarif-block__description">Стандарт</p>
+                                <p>Домашнее телевидение</p>
+                                <p><span class="big-number" 
+                                    style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                    +200</span>ТВ каналов</p>
+                                <div class="bottom-block">
+                                <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                <div class="tarif-block__btn">
+                                
+                                    <button class="button-green js-btn-modal-application">
+                                    <span>Подключить</span>
+                                    <img src="img/main-page/main-page_icon.svg">
+                                    </button>
+                                </div>
+                                </div>
+                                </div>
+                                <div class="tarif-block js-pagination-tab" style="height: 442px;">
+                                    <p class="tarif-block__name">Домашнее телевидение</p>
+                                    <p class="tarif-block__description">Стандарт</p>
+                                    <p>Домашнее телевидение</p>
+                                    <p><span class="big-number" 
+                                        style="font-size: 22px; padding-right: 10px; vertical-align: -2px;">
+                                        +200</span>ТВ каналов</p>
+                                    <div class="bottom-block">
+                                        <p class="new-price"><span class="red-number">199</span>руб/мес</p>
+                                    <div class="tarif-block__btn">
+                                    
+                                        <button class="button-green js-btn-modal-application">
+                                        <span>Подключить</span>
+                                        <img src="img/main-page/main-page_icon.svg">
+                                        </button>
+                                    
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="more-btn"><button class="js-btn-search-more"><span>Показать еще</span>
+                        <img src="img/more-btn-icon.png" alt="icon"></button></div>
+                   
+                   <div class="table container col-xl-12">
+                        <h3 class="table-title">Дополнительные пакеты</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Тариф</th>
+                                    <th>Количество каналов</th>
+                                    <th>Плата в месяц</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ДОЖДЬ</td>
+                                    <td>1</td>
+                                    <td>240 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Amedia Premium HD</td>
+                                    <td>4</td>
+                                    <td>299 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Наш Футбол</td>
+                                    <td>1</td>
+                                    <td>299 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Матч! Футбол</td>
+                                    <td>3</td>
+                                    <td>380 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Настрой кино</td>
+                                    <td>5</td>
+                                    <td>380 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Ночной</td>
+                                    <td>7</td>
+                                    <td>199 рублей</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                </section>
+                <section style="border-top: 1px solid #F2F3F8; padding-top: 70px;">
+                    <div class="home-tarif__application container col-xl-12">
+                    <div class="modal-application">
+                        <div class="modal-application__desription">
+                            <p>Ответим в ближайшее время</p>
+                            <h2>Заявка на подключение</h2>
+                        </div>
+                        <div class="modal-application__form">
+                            <form class="form-app">
+                                <input name="city" type="text" placeholder="Город">
+                                <input name="street" type="text" placeholder="Улица">
+                                <input name="appartament" type="text" placeholder="Квартира">
+                                <input id="application_phone" name="phone" type="tel" maxlength="50"
+                                placeholder="+7 XXX XXX-XX-XX">
+                                <a href="">
+                                    <button class="main-page__button js-btn-modal">
+                                        <span>Отправить</span>
+                                        <img src="img/main-page/main-page_icon.svg" alt="main-page_icon">
+                                    </button>
+                                </a>
+                                <div>
+                                    <input type="checkbox" id="presonal-concent" name="personal-consent" checked />
+                                    <label for="personal-consent">Отправляя заявку, я соглашаюсь на обработку персональных данных</label>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </main>
+            <footer style="border-top: 1px solid #F2F3F8;">
+                <div class="footer container col-xl-12">
+                    <div class="footer__blocks" style="border-bottom: 1px solid #F2F3F8;">
+                        <div class="footer__block">
+                            <a href="#"><div class="footer__logo">
+                                <img src="img/header/logo-desktop-header.png" alt="logo"></div></a>
+                            <div class="support">
+                                <span class="support__text">Техническая поддержка:</span>
+                                <a href="#"><p class="number">8 (861) 211-3000</p></a>
+                                <div class="footer__mail">
+                                    <p>Почта:<a href="#"><span class="footer__email">Intex@mail.ru</span></a><
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__menu">
+                            <div class="footer-menu__item">
+                                        <div class="footer-menu__item--title">Интернет</div>
+                                <a href="home_internet.html"><div class="footer-menu__item--list">Домашний интернет</div></a>
+                                <a href="business_internet.html"><div class="footer-menu__item--list">Для бизнеса</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <div class="footer-menu__item--title">Телевидение</div>
+                                <a href="tv.html"><div class="footer-menu__item--list">Об услуге и тарифы</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <div class="footer-menu__item--title">Телефония</div>
+                                <a href="tel-home.html"><div class="footer-menu__item--list">Частным лицам</div></a>
+                                <a href="tel-business.html"><div class="footer-menu__item--list">Для бизнеса</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <div class="footer-menu__item--title">Ремонт</div>
+                                <a href="repairs.html"><div class="footer-menu__item--list">Об услуге</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <div class="footer-menu__item--title">Оборудование</div>
+                                <a href="equipment.html"><div class="footer-menu__item--list">Об услуге</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a href="company.html"><div class="footer-menu__item--title">О нас</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a href="news.html"><div class="footer-menu__item--title">Новости</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a href="documents.html"><div class="footer-menu__item--title">Документы</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a href="contacts.html"><div class="footer-menu__item--title">Контакты</div></a>
+                            </div>
+                            <div class="footer-menu__item">
+                                <a href="vacancies.html"><div class="footer-menu__item--title">Вакансии</div></a>
+                            </div>
+                        </div>
+                        <div class="footer__social">
+                            
+                            <div class="soical-media__icon">
+                                <p class="soical-media__text">Соц. сети</p>
+                                <div>
+                                <a href="#"><img src="img/Social Icons.svg" alt="icons"></a>
+                                <a href="#"><img src="img/Social Icons (1).svg" alt="icons"></a>
+                                </div>
+                            </div>
+                            <div class="footer__btn">
+                                <button class="button-green js-btn-modal-application">Оставить заявку</button>
+                                <a href="#"><button class="button-grey">
+                                    <img src="img/header/button-icon (5).svg" alt="personal-icon">
+                                    <span>Личный кабинет</span>
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__authors">
+                        <div class="authors js-footer_after">
+                            <p class="js-footer_before">ООО ИНТЕХ Интернет-провайдер Краснодара. © 2010-2023</p>
+                            <p>Политика конфиденциальности</p>
+                            <a href="#"><span>Сделано в</span><img src="img/Сделано в Labsales.png"></a>
+                        </div>
+                        <div class="footer-number__document js-footer_element">
+                            Л030-00114-77/00108527, Л030-00114-77/00108759, Л030-00114-77/00108787, 
+                            Л030-00114-77/00141311, Л030-00114-77/00641097, Л030-00114-77/00141331</div>
+                    </div>
+                </div>  
+           </footer>
+        </div>
+    </body>
+    </html>
